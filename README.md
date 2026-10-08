@@ -1,107 +1,157 @@
+<div align="center">
+
+<a href="https://martha889.github.io/keystone/"><img src="docs/images/social-preview.png" alt="Keystone: learn piano and drums from first note to elite" width="100%"></a>
+
 # Keystone
 
-Learn **piano** and **drums** from your very first note to elite level, right in the browser. Keystone listens to you play, through your microphone or a USB-MIDI cable, and coaches you on every note, chord and beat.
+**Learn piano and drums, from your first note to elite level, with a coach that actually listens.**
 
-It is built for two instruments, but works with similar ones:
+Plug in your keyboard or electronic drum kit (or just use your microphone). Keystone shows you what to play,<br>
+hears what you actually played, and tells you exactly how to get better.
 
-| | Instrument | Best connection |
-| --- | --- | --- |
-| 🎹 | **Casio Casiotone CT-S1** (61 keys, C2–C7) | USB-MIDI, or the microphone |
-| 🥁 | **Alesis Nitro Max** electronic drum kit | USB-MIDI (the microphone can only judge timing) |
+### [▶ Open the app](https://martha889.github.io/keystone/)
 
-Everything runs locally in your browser: no account, no server. Audio from your microphone is analysed on your device and never uploaded. Progress is saved in the browser (Setup lets you export it).
+[![Live demo](https://img.shields.io/badge/demo-live-3b4cca?style=flat-square)](https://martha889.github.io/keystone/)
+[![Deploy](https://img.shields.io/github/actions/workflow/status/martha889/keystone/deploy.yml?branch=main&style=flat-square&label=deploy)](https://github.com/martha889/keystone/actions/workflows/deploy.yml)
+![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?style=flat-square&logo=typescript&logoColor=white)
+![Web MIDI](https://img.shields.io/badge/Web%20MIDI%20%2B%20Web%20Audio-no%20backend-0e8f80?style=flat-square)
 
-## Features
+</div>
 
-### Piano
+---
 
-- **10 levels · 44 lessons · 126 exercises:** Foundations → Reading Music → Rhythm & First Songs → Scales → Chords & Harmony → Hands Together & Repertoire → All Twelve Keys → Technique & Advanced Harmony → Advanced Performance → **Elite** (all 24 keys, 3-octave hands-together scales at ♩=120 sixteenths, arpeggios, Hanon, sight-reading in any key, seventh-chord ear training).
-- **Fingering and hand position for every exercise:** a finger number on every note and key (blue = right hand, orange = left), a starting hand-position card, a lit-up hand diagram, and cues before every hand move (“thumb passes under to F4”).
-- **Three exercise modes:** *Follow* (waits for each correct note), *Tempo* (metronome, scored for pitch and timing) and *Ear* (play back what you hear).
-- **Coach’s notes** after every run: frequent wrong notes, hesitation spots, rushing or dragging, and when to raise the tempo.
+## ✨ Why it's different
 
-### Drums
+- **It listens.** Every note, chord and drum hit is checked in real time, through the microphone or a USB-MIDI cable.
+- **It coaches, not just scores.** *“You hesitated at the thumb-under E→F (finger 3 → 1). Practise just those two notes slowly.”* *“Your kick is 32 ms behind your hands.”* *“Your left hand is 37% softer.”*
+- **It shows you how.** Finger numbers on every note and key, hand-position cues before every move. On drums: sticking, the count, and the next pad lit up on a kit diagram.
+- **It goes all the way.** 20 levels and 199 exercises, from *“find middle C”* to conservatory scales and ♩=180 single-stroke rolls.
+- **Zero setup.** It runs in your browser. No account, no install, no server. Your audio never leaves your device.
 
-- **10 levels · 30 lessons · 73 exercises:** pads and grip → counting → rudiments → rock beats → fills → hi-hat and feet → styles (funk, shuffle, jazz, bossa nova, reggae, 6/8) → flams and triplet rudiments → odd time, linear grooves and polyrhythm → **Elite** (singles ♩=180, doubles ♩=150, clock tests where the click drops out, sixteenth-triplet fills, four-way coordination).
-- **Drum notation** with sticking (R/L) and the count (“1 e & a”) under every note, plus a **kit diagram** that lights up the next pads with the limb to use.
-- **Feedback from pad velocity and timing:** per-limb timing (“your kick is 28 ms behind your hands”), left/right hand balance, accent and ghost-note levels, flam spacing, wrong pads, open vs closed hi-hat, and drift when the click goes silent.
-- **Call and response** bars and **Teach the app my kit** for modules with non-standard MIDI notes.
+## 👀 See it in action
 
-### Both
+<table>
+<tr>
+<th width="50%">🎹 Piano: fingering &amp; hand-move cues</th>
+<th width="50%">🥁 Drums: notation, sticking &amp; live kit</th>
+</tr>
+<tr>
+<td>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/piano-play-dark.png">
+  <img src="docs/images/piano-play-light.png" alt="Piano exercise: C major scale with finger numbers, a 'thumb passes under to F4' cue, a lit hand diagram and keyboard">
+</picture>
+</td>
+<td>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/drums-play-dark.png">
+  <img src="docs/images/drums-play-light.png" alt="Drum exercise: rock beat with drum notation, R/L sticking, the count and a kit diagram lighting up the hi-hat">
+</picture>
+</td>
+</tr>
+<tr>
+<th>Feedback a teacher would give</th>
+<th>Timing, per limb, from every hit</th>
+</tr>
+<tr>
+<td>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/piano-results-dark.png">
+  <img src="docs/images/piano-results-light.png" alt="Piano results: stars, accuracy, and coach's notes about a hesitation at the thumb crossing and a wrong note">
+</picture>
+</td>
+<td>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/drums-results-dark.png">
+  <img src="docs/images/drums-results-light.png" alt="Drum results: hits on time, average timing, steadiness, left vs right volume, and coach's notes about a dragging kick">
+</picture>
+</td>
+</tr>
+</table>
 
-- **Practice Gym:** build any drill at any tempo.
-- **Free Play:** play anything and see your tempo and evenness.
-- **Repeat ×1–×8** on any exercise for longer sessions; random drills generate fresh material on every pass.
-- Stars, best tempo, XP and ranks, daily streak and practice time.
+## 🗺️ What you'll learn
 
-## Use it
+| Level | 🎹 Piano (Casio CT-S1, 61 keys) | 🥁 Drums (Alesis Nitro Max) |
+| :---: | --- | --- |
+| 1 | Foundations: middle C, the keys, finger numbers | Getting started: pads, grip, posture, your feet |
+| 2 | Reading music: treble, bass and grand staff | Counting: quarters, eighths, sixteenths, reading |
+| 3 | Rhythm & first songs | Rudiments I: singles, doubles, paradiddles, accents |
+| 4 | Scales & thumb crossing | First beats: the rock beat and its variations |
+| 5 | Chords, inversions & progressions | Fills around the kit |
+| 6 | Hands together & repertoire (Bach, Beethoven…) | Hi-hat & independence |
+| 7 | All twelve keys | Styles: funk, shuffle, jazz, bossa nova, reggae, 6/8 |
+| 8 | Hanon, arpeggios, seventh chords, ii–V–I | Rudiments II: flams, triplets, ghost notes |
+| 9 | Advanced performance & sight-reading | Odd time, linear grooves, polyrhythm |
+| 10 | **Elite:** all 24 keys, 3 octaves HT at ♩=120 | **Elite:** singles ♩=180, clock tests, four-way coordination |
 
-Open the hosted app (see [Deploying](#deploying-to-github-pages)) or run it locally:
+Plus a **Practice Gym** (any scale, rudiment, groove or reading drill at any tempo), **Free Play** with tempo and evenness analysis, **ear training**, and **Repeat ×1–×8** for longer sessions.
+
+## 🚀 Get started in a minute
+
+1. **Open [martha889.github.io/keystone](https://martha889.github.io/keystone/)** in Chrome or Edge.
+2. **Connect your instrument:**
+   - **Keyboard:** go to **Setup**. Use the microphone, or plug the keyboard’s USB port into your computer and choose **USB-MIDI** for exact notes.
+   - **Drums:** switch to **🥁 Drums → Setup**, plug the drum module’s USB port in and choose **USB-MIDI**.
+3. **Press Start** on lesson 1. The app counts you in and coaches you from there.
+
+> 💡 Any MIDI keyboard or e-drum kit works. The lessons are written for the CT-S1’s 61 keys and the Nitro Max layout, and **Teach the app my kit** handles drum modules with custom note maps.
+
+## 🧠 How it works
+
+| | |
+| --- | --- |
+| **Pitch** | YIN pitch detection with a sub-harmonic guard, plus spectral “rising note” analysis for notes played over ringing ones |
+| **Attacks** | Energy rise **and** spectral flux, so fast legato runs and repeated notes register. The metronome click is filtered out of the mic. |
+| **Chords** | The app knows what you *should* play, so it verifies each expected note’s partials appear and grow, rather than guessing blind |
+| **Fingering** | Dynamic-programming fingering (Parncutt-style comfort costs) for any passage, plus hand-position tracking that detects every thumb-under and shift |
+| **Drums** | Every MIDI hit matched to the score by pad and time. Velocity drives accent, ghost-note and hand-balance feedback. |
+| **Timing** | Sample-accurate Web Audio metronome. Hits compared to scheduled beats, latency-calibrated in Setup. |
+
+## 💻 Run it locally
 
 ```bash
+git clone https://github.com/martha889/keystone.git
+cd keystone
 npm install
-npm run dev        # then open the printed http://localhost:5173 link
+npm run dev      # → http://localhost:5173
 ```
 
-- Use **Chrome or Edge.** Safari doesn’t support Web MIDI.
-- The microphone needs `localhost` or HTTPS (GitHub Pages is HTTPS).
-- First visit: open **Setup** (piano) or **Drums → Setup** to connect your instrument.
+`npm run build` creates a static site in `dist/`. Every push to `main` deploys to GitHub Pages via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). To host your own copy, fork the repository and set **Settings → Pages → Source** to **GitHub Actions**.
 
-**Connecting by USB:** both the CT-S1 and the Nitro Max module have a USB port that sends MIDI. Plug it into your computer and choose **USB-MIDI** in Setup. This gives exact notes, chords, timing and velocity. On the Nitro Max, keep **Local mode (LOC) on** so the module still makes sound.
-
-## Deploying to GitHub Pages
-
-The repository includes a workflow (`.github/workflows/deploy.yml`) that builds and publishes the app on every push to `main`.
-
-1. Create a repository on GitHub and push this project to its `main` branch.
-2. In the repository, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
-3. Push (or run the workflow from the **Actions** tab). The site appears at `https://<your-username>.github.io/<repository-name>/`.
-
-The build uses relative paths and hash-based routing (`#/drums/…`), so it works under any repository name with no extra configuration.
-
-## Project structure
+<details>
+<summary><b>Project structure</b></summary>
 
 ```
 src/
-  main.tsx                 entry point
-  app/                     app shell: top bar, routing, global styles
+  main.tsx              entry point
+  app/                  app shell, routing, global styles
   shared/
-    audio/                 microphone/MIDI input hub, pitch detection, synth + metronome
-    store/                 progress (XP, stars, streaks) and settings, saved in localStorage
-    components/            small shared UI (level meter, repeat picker, markdown text)
+    audio/              mic/MIDI input hub, pitch detection, synth + metronome
+    store/              progress (XP, stars, streaks) and settings (localStorage)
+    components/         level meter, repeat picker, markdown text
   piano/
-    music/                 theory (spelling, scales, chords, keys) and automatic fingering
-    curriculum/            lesson content (levels.ts) and exercise builders/generators
-    practice/              note matching and scoring/feedback
-    components/            staff notation, keyboard, hand diagrams, exercise runner
-    pages/                 home, lessons, practice gym, free play, setup
+    music/              theory (spelling, scales, chords, keys) and automatic fingering
+    curriculum/         lessons (levels.ts) and exercise builders/generators
+    practice/           note matching, scoring and coaching
+    components/         staff notation, keyboard, hand diagrams, exercise runner
+    pages/              home, lessons, practice gym, free play, setup
   drums/
-    engine/                kit and MIDI map, pattern notation, sticking, scoring, drum sounds
-    curriculum/            lesson content
-    components/            drum notation, kit diagram, technique figures, exercise runner
-    pages/                 home and lessons, practice gym, free play, setup
+    engine/             kit + MIDI map, pattern notation, sticking, scoring, drum sounds
+    curriculum/         lessons
+    components/         drum notation, kit diagram, technique figures, exercise runner
+    pages/              home and lessons, practice gym, free play, setup
 ```
 
-## How the listening works
+Built with **React 19**, **TypeScript** and **Vite**, using the **Web Audio** and **Web MIDI** APIs. No backend.
+</details>
 
-- **Piano notes:** YIN pitch detection with a sub-harmonic guard. Attacks are found from energy rises plus spectral flux, so fast legato passages and repeated notes register.
-- **Chords:** the app knows what you *should* play, so it checks that each expected note’s partials appear and grow at the attack, and that no unexplained new notes appear. This is more reliable than blind polyphonic transcription.
-- **Drums:** every MIDI hit is matched to the written part by pad and time. Velocity drives the dynamics feedback.
-- **Timing:** attacks are latency-compensated (calibrate in Setup) and compared against the scheduled metronome beats. The metronome click is high-pitched and filtered out of the microphone detector.
+<details>
+<summary><b>Good to know</b></summary>
 
-## Development
-
-```bash
-npm run dev      # dev server with hot reload
-npm run build    # type-check and build to dist/
-npm run lint     # oxlint
-```
-
-Built with React, TypeScript and Vite, using the Web Audio and Web MIDI APIs. No backend.
-
-## Limitations
-
-- Through the microphone, very fast overlapping notes (sixteenths at elite tempos) are less reliable than USB-MIDI.
-- The app hears *which* keys you play, not *which fingers* you use. Check the fingering numbers yourself.
-- Drum notation is simplified: rests aren’t drawn, and the count under the staff shows where the gaps fall.
-- Some song transcriptions were written from memory. Check them against a published score.
+- **Browsers:** Chrome or Edge. Safari doesn’t support Web MIDI.
+- **Microphone limits:** USB-MIDI is more reliable than the microphone for very fast passages. On drums, the microphone can only judge timing, not which pad you hit.
+- **Fingering:** the app hears *which* keys you play, not *which fingers* you use. Check the numbers shown.
+- **Drum notation:** simplified. Rests aren’t drawn; the count under the staff shows the gaps.
+- **Your data:** progress lives in your browser’s storage. Export it from Setup to back it up.
+</details>

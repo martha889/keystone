@@ -10,7 +10,8 @@ export default function LevelMeter() {
       <div className="meter" title={live.midiDevices.join(', ') || 'No MIDI device found'}>
         <span className="meter-src">MIDI</span>
         <span className="meter-note">
-          {live.held.length
+          {/* Drum pads aren't pitches, so note names are only shown on the piano side */}
+          {live.held.length && !window.location.hash.startsWith('#/drums')
             ? live.held.slice(-3).map((m) => noteName(m)).join(' ') + (live.held.length > 3 ? ' …' : '')
             : live.midiDevices.length ? 'connected' : 'no device'}
         </span>
