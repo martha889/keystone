@@ -1,0 +1,65 @@
+/* ---------- Drums ---------- */
+:root { --rf: #0e8f80; --lf: #7c4ddb; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) { --rf: #2cc4b0; --lf: #a585ff; } }
+
+.inst-switch { padding: 3px; }
+.inst-switch a { padding: 5px 12px; border-radius: 9px; color: var(--ink-2); font-weight: 600; font-size: 0.9rem; white-space: nowrap; }
+.inst-switch a:hover { text-decoration: none; color: var(--ink); }
+.inst-switch a.on { background: var(--panel); color: var(--ink); box-shadow: var(--shadow); }
+@media (max-width: 720px) { .inst-switch { order: 2; } }
+
+.kit-wrap { margin-top: 14px; display: grid; justify-items: center; gap: 6px; }
+.kit { width: 100%; max-width: 560px; height: auto; display: block; }
+.kit.compact { max-width: 320px; }
+.pad { stroke: var(--ink-2); stroke-width: 1.4; transition: fill 0.08s; }
+.pad.drum { fill: var(--panel-2); }
+.pad.cym { fill: color-mix(in srgb, #d9a520 22%, var(--panel)); }
+.pad.kickbody, .pad.pedal { fill: var(--panel-2); }
+.bell { fill: none; stroke: var(--ink-2); stroke-width: 1; }
+.throne { fill: var(--panel-2); stroke: var(--line); }
+.padlabel { font-size: 12px; fill: var(--ink-2); font-weight: 600; pointer-events: none; }
+.pad.st-next { fill: color-mix(in srgb, var(--accent) 30%, var(--panel)); stroke: var(--accent); stroke-width: 2.5; }
+.pad.st-good { fill: var(--good); stroke: var(--good); }
+.pad.st-bad { fill: var(--bad); stroke: var(--bad); }
+.pad.st-live { fill: color-mix(in srgb, var(--accent) 45%, var(--panel)); }
+.limb circle { stroke: #fff; stroke-width: 2; }
+.limb text { font-size: 12px; font-weight: 800; fill: #fff; }
+.limb-RH circle { fill: var(--rh); }
+.limb-LH circle { fill: var(--lh); }
+.limb-RF circle { fill: var(--rf); }
+.limb-LF circle { fill: var(--lf); }
+.limb-legend { font-size: 0.82rem; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: center; }
+.lg { display: inline-grid; place-items: center; min-width: 22px; height: 22px; border-radius: 11px; color: #fff; font-weight: 800; font-size: 0.72rem; padding: 0 5px; margin-left: 6px; }
+.lg-RH { background: var(--rh); }
+.lg-LH { background: var(--lh); }
+.lg-RF { background: var(--rf); }
+.lg-LF { background: var(--lf); }
+.limb-text-RH { color: var(--rh); }
+.limb-text-LH { color: var(--lh); }
+.limb-text-RF { color: var(--rf); }
+.limb-text-LF { color: var(--lf); }
+
+.drum-staff .perc-clef { fill: var(--ink); }
+.dn { color: var(--ink); }
+.dn .ohead, .dn .grace ellipse { fill: currentColor; }
+.dn .xhead line, .dn .stem, .dn .grace line { stroke: currentColor; stroke-width: 1.5; }
+.dn .open-mark { fill: none; stroke: currentColor; stroke-width: 1.3; }
+.dn-good { color: var(--good); }
+.dn-warn { color: var(--warn); }
+.dn-bad { color: var(--bad); }
+.dn-current { color: var(--accent); }
+.dn-call { opacity: 0.45; }
+.beam { stroke: var(--ink); stroke-width: 3.5; }
+.flag { fill: none; stroke: var(--ink); stroke-width: 1.6; }
+.accent { font-size: 13px; font-weight: 800; fill: var(--ink); }
+.tuplet { font-size: 10px; font-style: italic; fill: var(--ink-2); }
+.ghost-paren { font-size: 13px; fill: currentColor; }
+.sticking { font-size: 11.5px; font-weight: 800; }
+.stk-RH { fill: var(--rh); }
+.stk-LH { fill: var(--lh); }
+.count { font-size: 10px; fill: var(--ink-2); }
+.count.beat { font-weight: 800; fill: var(--ink); }
+.call-bar { fill: var(--panel-2); }
+.bar-tag { font-size: 11px; font-weight: 700; fill: var(--ink-2); }
+.stick { stroke: #c9a46a; stroke-width: 6; stroke-linecap: round; }
+.stick-tip { fill: #c9a46a; }
